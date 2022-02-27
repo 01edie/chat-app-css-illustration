@@ -17,6 +17,11 @@ body{
   height: 100vh;
   background-color: hsl(0, 0%, 98%);
   overflow: hidden;
+  font-family: 'Rubik', sans-serif;
+  user-select: none;
+}
+p{
+  line-height: 0.75rem;
 }
 
 :root{
@@ -47,37 +52,40 @@ body{
   
 }
 .bg{
-  width: 32%;
+  width: 36%;
   height: 120%;
-  border-radius: 12.7rem;
-  -webkit-border-radius: 12.7rem;
-  -moz-border-radius: 12.7rem;
-  -ms-border-radius: 12.7rem;
-  -o-border-radius: 12.7rem;
+  border-radius: 15rem;
+  -webkit-border-radius: 15rem;
+  -moz-border-radius: 15rem;
+  -ms-border-radius: 15rem;
+  -o-border-radius: 15rem;
   position: absolute;
   z-index: -1;
 }
 .bg1{
   /* background: linear-gradient(to right,var(--Light-Violet),var(--Light-Magenta)); */
-  background-color: var(--Light-Violet);
-  top: -29%;
-  left: -2.5%;
+  background-color: hsl(278, 100%, 62%);
+  top: -32%;
+  left: -5%;
 }
 .bg2{
-  background-color: rgb(236, 233, 233);
+  background-color: hsl(264, 33%, 97%);
   position: absolute;
-  bottom: -29%;
-  right: -5%;
+  bottom: -32%;
+  right: -15%;
 }
 
 .content{
   display: flex;
-  gap: 5rem;
+  gap: 6rem;
+  position: relative;
+  left: 3.5%;
+  top: -1%;
 }
 .device{
   width: 16rem;
-  height: 30rem;
-  background-color: rgb(182, 55, 55);
+  height: 32rem;
+  background-color: white;
   border-radius: 26px;
   -webkit-border-radius: 26px;
   -moz-border-radius: 26px;
@@ -88,9 +96,9 @@ body{
   align-items: center;
 }
 .device-body{
-  background-color: aqua;
+  background-color: var(--Light-Grayish-Violet-app-background);
   width: calc(16rem - 16px);
-  height: calc(30rem - 16px);
+  height: calc(32rem - 16px);
   border-radius: 26px;
   -webkit-border-radius: 26px;
   -moz-border-radius: 26px;
@@ -115,8 +123,56 @@ body{
   -ms-border-radius: .35rem;
   -o-border-radius: .35rem;
 }
+.header-top{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-top: 0.5rem;
+  padding: 0 0.85rem;
+  color:rgba(255, 254, 254,0.95);
+
+}
+.header-left{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+
+}
+.profile-picture-plate{
+  width: 1.85rem;
+  height: 1.85rem;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-picture{
+  width: 1.6rem;
+  height: 1.6rem;
+  
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  
+}
+.profile-details strong{
+  font-size: 0.75rem;
+}
+.profile-details p{
+  font-size: 0.5rem;
+  color:rgba(224, 220, 220, 0.95);
+}
 .space{
-  background-color: rgb(182, 55, 55);
+  background-color: #fff;
   width: 50%;
   height: 1.5rem;
   border-radius: 10px;
@@ -125,13 +181,13 @@ body{
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   position: relative;
-  top: -8px;
+  top: -10px;
 }
 .chat-content{
   margin-top: 0.5rem;
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  gap: 0.35rem;
   padding: 0 10px;
 }
 .footer{
@@ -152,53 +208,124 @@ body{
   -o-border-radius: 1rem;
   border: none;
   padding-left: 1rem;
+  color: var(--Grayish-Blue-placeholder-text);
+  font-size: 0.65rem;
+}
+.chat-input:focus{
+  outline: none;
+  border: none;
 }
 .send-btn{
-  width: 1.55rem;
-  height: 1.55rem;
+  
   position: absolute;
   border: none;
-  background-color: rgb(58, 185, 185);
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  background: none;
   right: 0.95rem;
   top: 0.1rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
 }
 .row{
   width: 100%;
 }
 .message{
-  width: 60%;
+  width: 62%;
 }
 .message p{
   width: fit-content;
-  font-size: 0.75rem;
-  background-color: antiquewhite;
-  padding: 0.2rem;
+  font-size: 0.5rem;
+  font-weight: 700;
+  background-color: hsl(272, 41%, 93%);
+  color: var(--Moderate-Violet-chat-on-the-left);
+  padding: 0.5rem;
+  border-radius: 0.85rem 0.85rem 0.85rem 0.4rem;
+  -webkit-border-radius: 0.85rem 0.85rem 0.85rem 0.4rem;
+  -moz-border-radius: 0.85rem 0.85rem 0.85rem 0.4rem;
+  -ms-border-radius: 0.85rem 0.85rem 0.85rem 0.4rem;
+  -o-border-radius: 0.85rem 0.85rem 0.85rem 0.4rem;
 }
-.row4, .row5{
+.row3, .row4, .row5{
   display: flex;
   justify-content: end;
   
 }
-.message4, .message5{
+.message3, .message4, .message5{
   display: flex;
   justify-content: end;
 }
+.message3 p, .message4 p, .message5 p{
+  border-radius: 0.85rem 0.85rem 0.4rem 0.85rem ;
+  -webkit-border-radius: 0.85rem 0.85rem 0.4rem 0.85rem ;
+  -moz-border-radius: 0.85rem 0.85rem 0.4rem 0.85rem ;
+  -ms-border-radius: 0.85rem 0.85rem 0.4rem 0.85rem ;
+  -o-border-radius: 0.85rem 0.85rem 0.4rem 0.85rem ;
+  background-color: #fff;
+  color: var(--Desaturated-Dark-Violet-chat-on-the-right);
+}
 .message3{
   display: flex;
-  gap: 0.25rem;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  
 }
+.message6{
+  margin-top: 0.75rem;
+
+}
+.message7, .message8{
+  background: linear-gradient(to left,var(--Light-Violet),var(--Light-Magenta));
+  width: 80%;
+  border-radius: 0.85rem 0.85rem 0.85rem 0.4rem;
+  -webkit-border-radius: 0.85rem 0.85rem 0.85rem 0.4rem;
+  -moz-border-radius: 0.85rem 0.85rem 0.85rem 0.4rem;
+  -ms-border-radius: 0.85rem 0.85rem 0.85rem 0.4rem;
+  -o-border-radius: 0.85rem 0.85rem 0.85rem 0.4rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+.message7 p, .message8 p{
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  color:rgba(255, 254, 254,0.65);
+  
+  
+}
+.message7 span, .message8 span{
+  color: #fff;
+  font-size: 0.85rem;
+}
+.message7 p i, .message8 p i{
+  font-size: 0.85rem;
+  padding-right: 0.35rem;
+}
+
 .chat-image{
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.65rem;
+  height: 2.65rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
 }
 .description{
-  width: 23rem;
+
+  width: 23.4rem;
   display: flex;
+  gap: 1.5rem;
   flex-direction: column;
   justify-content: center;
 } 
+.description h1{
+  color: var(--Very-Dark-Desaturated-Violet-main-heading);
+}
+.description p{
+  line-height: 1.6rem;
+  font-size: 0.825rem;
+  color: var(--Dark-Grayish-Violet-paragraph);
+}

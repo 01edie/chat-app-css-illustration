@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
 
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <!-- font awesome icon cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css"
+    integrity="sha512-E+53kXnJyuZFSz75xSmTfCpUNj3gp9Bd80TeQQMTPJTVWDRHPOpEYczGwWtsZXvaiz27cqvhdH8U+g/NMYua3A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; position: absolute;bottom: 2%;left: 40%;}
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      position: absolute;
+      bottom: 2%;
+      left: 40%;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
   <!-- custom css -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <main class="container">
@@ -26,43 +41,89 @@
         <div class="device-body">
           <div class="header">
             <div class="space"></div>
-            <div class="header-top"></div>
+            <div class="header-top">
+              <div class="header-left">
+                <div class="back-key"><i class="fa-solid fa-chevron-left"></i></div>
+                <div class="profile-picture-plate">
+                  <div class="profile-picture"><img src="./images/avatar.jpg" alt="profile-picture" class="profile-picture"></div>
+                </div>
+                <div class="profile-details">
+                  <strong>Samuel Green</strong>
+                  <p>Available to Walk</p>
+                </div>
+              </div>
+              <div class="header-right">
+                <img src="./images/more_vert_black_24dp.svg" alt="more_vert_black_24dp">
+              </div>
+            </div>
           </div>
           <div class="chat-content">
-            <div class="row row1"><div class="message message1"><p>That sounds great. I’d be happy with that.</p> </div></div>
-            <div class="row row2"><div class="message message2"><p>Could you send over some pictures of your dog, please?</p> </div></div>
-            <div class="row row3"><div class="message message3"><img src="./images/dog-image-1.jpg" alt="dog" class="chat-image"><img src="./images/dog-image-2.jpg" alt="dog" class="chat-image"><img src="./images/dog-image-3.jpg" alt="dog" class="chat-image"></div></div>
-            <div class="row row4"><div class="message message4"><p>Here are a few pictures. She’s a happy girl!</p> </div></div>
-            <div class="row row5"><div class="message message5"><p>Can you make it?</p> </div></div>
-            <div class="row row6"><div class="message message6"><p>She looks so happy! The time we discussed works. How long shall I take her out for?</p> </div></div>
-            <div class="row row7"><div class="message message7"><p>30 minute walk
-              $29</p> </div></div>
-            <div class="row row8"><div class="message message8"><p>1 hour walk
-              $49</p> </div></div>
+            <div class="row row1">
+              <div class="message message1">
+                <p>That sounds great. I’d be happy with that.</p>
+              </div>
+            </div>
+            <div class="row row2">
+              <div class="message message2">
+                <p>Could you send over some pictures of your dog, please?</p>
+              </div>
+            </div>
+            <div class="row row3">
+              <div class="message message3"><img src="./images/dog-image-1.jpg" alt="dog" class="chat-image"><img
+                  src="./images/dog-image-2.jpg" alt="dog" class="chat-image"><img src="./images/dog-image-3.jpg"
+                  alt="dog" class="chat-image"></div>
+            </div>
+            <div class="row row4">
+              <div class="message message4">
+                <p>Here are a few pictures. She’s a happy girl!</p>
+              </div>
+            </div>
+            <div class="row row5">
+              <div class="message message5">
+                <p>Can you make it?</p>
+              </div>
+            </div>
+            <div class="row row6">
+              <div class="message message6">
+                <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+              </div>
+            </div>
+            <div class="row row7">
+              <div class="message message7">
+                <p><i class="fa-regular fa-circle"></i>30 minute walk</p>
+                <span>$29</span>
+              </div>
+            </div>
+            <div class="row row8">
+              <div class="message message8">
+                <p><i class="fa-regular fa-circle"></i>1 hour walk</p>
+                <span>$49</span>
+              </div>
+            </div>
           </div>
           <form class="footer">
-            <input type="text" class="chat-input" placeholder="Type a message"><button class="send-btn">></button>
+            <input type="text" class="chat-input" placeholder="Type a message..."><button class="send-btn"><i class="fa-solid fa-circle-chevron-right"></i></button>
           </form>
         </div>
       </div>
       <div class="description">
         <h1>Simple Booking</h1>
-        <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-          discuss arrangements and make bookings. Once the walk has been completed you can rate 
+        <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to
+          discuss arrangements and make bookings. Once the walk has been completed you can rate
           your walker and book again all through the chat.</p>
       </div>
     </div>
     <div class="bg2 bg"></div>
 
   </main>
-<!-- 
+  <!-- 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
 
-  <!-- Samuel Green
-  Available to Walk
+  <!-- 
+  
 
   
 
@@ -82,8 +143,9 @@
 
   Simple booking -->
 
-  
-  
+
+
 
 </body>
+
 </html>
