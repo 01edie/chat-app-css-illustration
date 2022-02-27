@@ -1,0 +1,204 @@
+/* font Rubik */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;900&display=swap');
+
+/* global styling */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(0, 0%, 98%);
+  overflow: hidden;
+}
+
+:root{
+  /* primary */
+  --Pale-Violet-sub-heading-at-the-top-of-the-app-UI: hsl(276, 100%, 81%);
+  --Moderate-Violet-chat-on-the-left: hsl(276, 55%, 52%);
+  --Desaturated-Dark-Violet-chat-on-the-right: hsl(271, 15%, 43%);
+  --Grayish-Blue-placeholder-text: hsl(206, 6%, 79%);
+  --Very-Dark-Desaturated-Violet-main-heading: hsl(271, 36%, 24%);
+  --Dark-Grayish-Violet-paragraph: hsl(270, 7%, 64%);
+  /* Gradients */
+  --Light-Magenta: hsl(293, 100%, 63%);
+  --Light-Violet: hsl(264, 100%, 61%);
+  /* Secondary */
+  --White: hsl(0, 0%, 100%);
+  --Light-Grayish-Violet-app-background: hsl(270, 20%, 96%);
+  --Very-Dark-Desaturated-Violet-submit-button-background: hsl(271, 36%, 24%);
+  --Very-Light-Magenta-radio-button-outline: hsl(289, 100%, 72%);
+}
+
+/* project css  */
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.bg{
+  width: 32%;
+  height: 120%;
+  border-radius: 12.7rem;
+  -webkit-border-radius: 12.7rem;
+  -moz-border-radius: 12.7rem;
+  -ms-border-radius: 12.7rem;
+  -o-border-radius: 12.7rem;
+  position: absolute;
+  z-index: -1;
+}
+.bg1{
+  /* background: linear-gradient(to right,var(--Light-Violet),var(--Light-Magenta)); */
+  background-color: var(--Light-Violet);
+  top: -29%;
+  left: -2.5%;
+}
+.bg2{
+  background-color: rgb(236, 233, 233);
+  position: absolute;
+  bottom: -29%;
+  right: -5%;
+}
+
+.content{
+  display: flex;
+  gap: 5rem;
+}
+.device{
+  width: 16rem;
+  height: 30rem;
+  background-color: rgb(182, 55, 55);
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  -ms-border-radius: 26px;
+  -o-border-radius: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.device-body{
+  background-color: aqua;
+  width: calc(16rem - 16px);
+  height: calc(30rem - 16px);
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  -ms-border-radius: 26px;
+  -o-border-radius: 26px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  
+  padding-bottom: 10px;
+  position: relative;
+}
+.header{
+  background: linear-gradient(to right,var(--Light-Violet),var(--Light-Magenta));
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: .35rem;
+  -webkit-border-radius: .35rem;
+  -moz-border-radius: .35rem;
+  -ms-border-radius: .35rem;
+  -o-border-radius: .35rem;
+}
+.space{
+  background-color: rgb(182, 55, 55);
+  width: 50%;
+  height: 1.5rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+  top: -8px;
+}
+.chat-content{
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0 10px;
+}
+.footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: 0.5rem;
+}
+.chat-input{
+  width: 90%;
+  height: 1.75rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border: none;
+  padding-left: 1rem;
+}
+.send-btn{
+  width: 1.55rem;
+  height: 1.55rem;
+  position: absolute;
+  border: none;
+  background-color: rgb(58, 185, 185);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  right: 0.95rem;
+  top: 0.1rem;
+}
+.row{
+  width: 100%;
+}
+.message{
+  width: 60%;
+}
+.message p{
+  width: fit-content;
+  font-size: 0.75rem;
+  background-color: antiquewhite;
+  padding: 0.2rem;
+}
+.row4, .row5{
+  display: flex;
+  justify-content: end;
+  
+}
+.message4, .message5{
+  display: flex;
+  justify-content: end;
+}
+.message3{
+  display: flex;
+  gap: 0.25rem;
+}
+.chat-image{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.description{
+  width: 23rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} 
