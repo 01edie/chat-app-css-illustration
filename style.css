@@ -360,4 +360,14 @@ p{
     font-size: 0.9rem;
     text-align: center;
   }
+  .message3{
+    margin-top: 0.2rem;
+  }
+  .message6{
+    margin-top: 0.2rem;
+  
+  }
+  .chat-content{
+    gap: 0.25rem;
+  }
 }
